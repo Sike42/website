@@ -75,8 +75,7 @@ section h2 {
   font-weight: 200;
   letter-spacing: 1px;
   background-image: url(../img/Sike-Web-Logo-small-126-50.png);
-
-
+  background-repeat: no-repeat;
 }
 
     #mainNav .navbar-brand:hover, #mainNav .navbar-brand:focus {
