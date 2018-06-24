@@ -158,8 +158,8 @@ header.masthead {
   padding-bottom: 100px;
   color: white;
   background: url("../img/bg-pattern.png"), #7b4397;
-  background: url("../img/bg-pattern.png"), -webkit-linear-gradient(to left, #05fa3f, #7b4397);
-  background: url("../img/bg-pattern.png"), linear-gradient(to left, #05fa3f, #7b4397);
+  background: url("../img/bg-pattern.png"), -webkit-linear-gradient(to left, #02c4e1, #7b4397);
+  background: url("../img/bg-pattern.png"), linear-gradient(to left, #02c4e1, #7b4397);
 }
 
 header.masthead .header-content {
