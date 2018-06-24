@@ -74,6 +74,9 @@ section h2 {
   font-family: 'Catamaran', 'Helvetica', 'Arial', 'sans-serif';
   font-weight: 200;
   letter-spacing: 1px;
+  background-image: url(../img/Sike-Web-Logo-small-126-50.png);
+
+
 }
 
     #mainNav .navbar-brand:hover, #mainNav .navbar-brand:focus {
