@@ -65,18 +65,21 @@ section h2 {
   -moz-transition: all .35s;
   transition: all .35s;
   font-family: 'Catamaran', 'Helvetica', 'Arial', 'sans-serif';
-  font-weight: 200;
+  font-weight:200;
   letter-spacing: 1px;
 }
 
 #mainNav .navbar-brand {
   color: #05fa3f;
   font-family: 'Catamaran', 'Helvetica', 'Arial', 'sans-serif';
-  font-weight: 200;
+  font-weight: 600;
   letter-spacing: 1px;
-  background-image: url(../img/Sike-Web-Logo-small-test1122X50.png);
-  background-repeat: no-repeat;
+   background-repeat: no-repeat;
+  min-width:220px;
 }
+
+
+
 
     #mainNav .navbar-brand:hover, #mainNav .navbar-brand:focus {
         color: #05fa3f;
