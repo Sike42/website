@@ -10,15 +10,84 @@
     <title>Sike42 </title>
 
 
-    <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css?family=Catamaran:100,200,300,400,500,600,700,800,900" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css?family=Muli" rel="stylesheet">
-
     <!-- Bootstrap core CSS -->
     <link href="css/bootstrap.css" rel="stylesheet">
     <link rel="stylesheet" href="css/font-awesome.css">
 
     <link rel="stylesheet" href="css/new-age.css" >
+
+
+    <!-- Bootstrap core JavaScript -->
+    <script src="js/jquery.js"></script>
+    <script src="js/bootstrap.bundle.js"></script>
+
+    <!-- Plugin JavaScript -->
+    <script src="js/jquery.easing.js"></script>
+
+    <!-- Custom scripts for this template -->
+    <script src="js/new-age.js"></script>
+   
+    <script type="text/javascript" src="https://www.google.com/recaptcha/api.js"> </script>
+   
+
+
+
+ <script>          
+
+
+
+
+    $(document).ready(function() {
+                  var frm = $('#contactForm');
+                  frm.bootstrapValidator({
+                      fields: {
+                          Name: {
+                              validators: {
+                                  notEmpty: {
+                                      message: 'Your name is required'
+                                  }
+                              }
+                          },
+                          Email: {
+                              validators: {
+                                  notEmpty: {
+                                      message: 'Your email is required'
+                                  },
+                                  emailAddress: {
+                                      message: 'Your email is not valid'
+                                  }
+                              }
+                          },
+                          Message: {
+                              validators: {
+                                  notEmpty: {
+                                      message: 'Your message is required'
+                                  }
+                              }
+                          },
+                          Consent: {
+                              validators: {
+                                  choice: {
+                                      min: 1,
+                                      max: 1,
+                                      message: 'You need to tick the box'
+                                  }
+                              }
+                          }
+                      }
+                  })
+                  .on('success.form.bv', function(e) {
+                          e.preventDefault();
+                          $('#contactForm').hide();
+                          $('#status').html("Sending form, please wait...");
+                          $('#status').html("Thank you, we've received your message.");
+                      });
+              });
+         </script>
+ 
+
+
+
 
   </head>
 
@@ -148,64 +217,42 @@
 
     <section class="contact bg-primary" id="contact">
 
-
-      <div class="container">
-
-
-<!--
-
- Ajax Contact Form Version 2.0
- Copyright: Stuart Cochrane (stuartc1@gmail.com)
- URL: www.freecontactform.com
- Date: September 2009
- 
-
- You must retain all comments, references and links
--->
-
-<style>
-#ajax_form {width:410px;font-family:verdana,arial;font-size:12px}
-#ajax_form td{font-family:verdana,arial;font-size:12px}
-#ajax_form_header {font-family:verdana,arial;font-size:1.3em;font-weight:bold;text-align:center}
-#returned_value{font-family:verdana,arial;text-align:center;font-size:12px;color:#000000}
-#go {border:1px solid #CCCCCC;background:#FFF}
-</style>
-<script type="text/javascript" src="js/cform.js"></script>
+	 <div class="container" style="border-style:solid " >
+	 <div class="col-md-6 col-sm-6">
+	<br>
 
 
-<h2>Contact Us Form</h2>
 
-<div id="ajax_form">
-<form>
-<br />
-<table width="350" border="0" align="center" cellpadding="4" cellspacing="0">
-  <tr> 
-    <td><label>Your Name:</label></td>
-    <td><input type="text" id="name" style="width:100%" /></td>
-  </tr>
-  <tr> 
-    <td><label>Your Email:</label></td>
-    <td><input type="text" id="email" style="width:100%" /></td>
-  </tr>
-  <tr> 
-    <td><label>Your Subject:</label></td>
-    <td><input type="text" id="subject" style="width:100%" /></td>
-  </tr>
-  <tr> 
-    <td colspan="2">
-    	<label>Your Message:</label><br /><br />
-    	<textarea name="body" style="width:100%;height:160px" id="body"></textarea>
-    </td>
-  </tr>
-  <tr align="center"> 
-    <td colspan="2"><input type="button" value="Submit" id="submit" onClick="return check_values();"></td>
-  </tr>
-</table>
-</form>
-  <br />
-  <div align="center"><!-- leave this link please --><a href="http://www.freecontactform.com/ajax_form.php">Ajax Contact Form</a></div><br /><br />
-	<div id="confirmation" style="display:none" align="center"></div>
+
+ <form>
+    <div class="form-group">
+      <label for="email">Email:</label>
+      <input type="email" class="form-control" id="email" placeholder="Enter email">
+    </div>
+    <div class="form-group">
+      <label for="pwd">Password:</label>
+      <input type="password" class="form-control" id="pwd" placeholder="Enter password">
+    </div>
+    <div class="checkbox">
+      <label><input type="checkbox"> Remember me</label>
+    </div>
+    <button type="submit" class="btn btn-default">Submit</button>
+  </form>
+
+
+        <div id="status"></div>
+
+
+
+
+
+
+
+
+
 </div>
+
+
 
 
 
@@ -260,15 +307,7 @@
       </div>
     </footer>
 
-    <!-- Bootstrap core JavaScript -->
-    <script src="js/jquery.js"></script>
-    <script src="js/bootstrap.bundle.js"></script>
 
-    <!-- Plugin JavaScript -->
-    <script src="js/jquery.easing.js"></script>
-
-    <!-- Custom scripts for this template -->
-    <script src="js/new-age.js"></script>
 
   </body>
 
