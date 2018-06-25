@@ -27,64 +27,12 @@
     <!-- Custom scripts for this template -->
     <script src="js/new-age.js"></script>
    
-    <script type="text/javascript" src="https://www.google.com/recaptcha/api.js"> </script>
+  
+     <script src='https://www.google.com/recaptcha/api.js'></script>
    
 
 
 
- <script>          
-
-
-
-
-    $(document).ready(function() {
-                  var frm = $('#contactForm');
-                  frm.bootstrapValidator({
-                      fields: {
-                          Name: {
-                              validators: {
-                                  notEmpty: {
-                                      message: 'Your name is required'
-                                  }
-                              }
-                          },
-                          Email: {
-                              validators: {
-                                  notEmpty: {
-                                      message: 'Your email is required'
-                                  },
-                                  emailAddress: {
-                                      message: 'Your email is not valid'
-                                  }
-                              }
-                          },
-                          Message: {
-                              validators: {
-                                  notEmpty: {
-                                      message: 'Your message is required'
-                                  }
-                              }
-                          },
-                          Consent: {
-                              validators: {
-                                  choice: {
-                                      min: 1,
-                                      max: 1,
-                                      message: 'You need to tick the box'
-                                  }
-                              }
-                          }
-                      }
-                  })
-                  .on('success.form.bv', function(e) {
-                          e.preventDefault();
-                          $('#contactForm').hide();
-                          $('#status').html("Sending form, please wait...");
-                          $('#status').html("Thank you, we've received your message.");
-                      });
-              });
-         </script>
- 
 
 
 
@@ -239,10 +187,10 @@
     <button type="submit" class="btn btn-default">Submit</button>
   </form>
 
-
+ 
         <div id="status"></div>
 
-
+<div class="g-recaptcha" data-sitekey="6LdWq2AUAAAAAJfV2hIizmqlMxrhYQl2GowUFAbi"></div>
 
 
 
@@ -254,38 +202,41 @@
 
 
 
+<br><br><br>
 
 
 
+        <h2>We  <i class="fa fa-heart"></i>  new friends!</h2>
+        
+	<ul class="list-inline list-social">
 
-        <h2>We
-          <i class="fa fa-heart"></i>
-          new friends!</h2>
-        <ul class="list-inline list-social">
+		<li class="list-inline-item social-youtube">
+	            <a href="https://www.youtube.com/user/CowheadTeeVee">
+	              <i class="fa fa-youtube"></i>
+        	    </a>
+          	</li>
 
-	 <li class="list-inline-item social-youtube">
-            <a href="https://www.youtube.com/user/CowheadTeeVee">
-              <i class="fa fa-youtube"></i>
-            </a>
-          </li>
-
-          <li class="list-inline-item social-twitter">
-            <a href="https://twitter.com/cowheadmedia?lang=en">
-              <i class="fa fa-twitter"></i>
-            </a>
-          </li>
-          <li class="list-inline-item social-facebook">
-            <a href="https://www.facebook.com/CaltaVision/">
-              <i class="fa fa-facebook"></i>
-            </a>
-          </li>
-          <li class="list-inline-item social-linkedin">
-            <a href="https://www.linkedin.com/in/sike42">
-              <i class="fa fa-linkedin"></i>
-            </a>
-          </li>
+          	<li class="list-inline-item social-twitter">
+            		<a href="https://twitter.com/cowheadmedia?lang=en">
+              		<i class="fa fa-twitter"></i>
+            		</a>
+          	</li>
+          
+		<li class="list-inline-item social-facebook">
+            		<a href="https://www.facebook.com/CaltaVision/">
+              		<i class="fa fa-facebook"></i>
+            		</a>
+          	</li>
+          	
+		<li class="list-inline-item social-linkedin">
+	            <a href="https://www.linkedin.com/in/sike42">
+        	      <i class="fa fa-linkedin"></i>
+	            </a>
+        	</li>
 
         </ul>
+
+
       </div>
     </section>
 
