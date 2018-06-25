@@ -72,10 +72,9 @@ section h2 {
 #mainNav .navbar-brand {
   color: #05fa3f;
   font-family: 'Catamaran', 'Helvetica', 'Arial', 'sans-serif';
-  font-weight: 600;
+  font-weight: 400;
   letter-spacing: 1px;
-   background-repeat: no-repeat;
-  min-width:220px;
+
 }
 
 
