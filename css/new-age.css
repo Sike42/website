@@ -4,12 +4,7 @@ body {
   height: 100%;
 }
 
-body {
-  font-family: 'Muli', 'Helvetica', 'Arial', 'sans-serif';
-}
-
-#sike{
-}
+body {   font-family: 'Muli', 'Helvetica', 'Arial', 'sans-serif'; }
 
 a {
   color: #fdcc52;
@@ -18,9 +13,7 @@ a {
   transition: all .35s;
 }
 
-a:hover, a:focus {
-  color: #05fa3f;
-}
+a:hover, a:focus {  color: #05fa3f; }
 
 hr {
   max-width: 100px;
@@ -29,9 +22,7 @@ hr {
   border-color: rgba(34, 34, 34, 0.1);
 }
 
-hr.light {
-  border-color: white;
-}
+hr.light {   border-color: white; }
 
 h1,
 h2,
@@ -158,7 +149,7 @@ section h2 {
 header.masthead {
   position: relative;
   width: 100%;
-  padding-top:50px;
+  padding-top:150px;
   padding-bottom:100px;
   color: white;
   background: url("../img/bg-pattern.png"), #7b4397;
