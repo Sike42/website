@@ -2,7 +2,7 @@
 if(isset($_POST['email'])) {
  
     // EDIT THE 2 LINES BELOW AS REQUIRED
-    $email_to = "you@yourdomain.com";
+    $email_to = "mike@webaphorism.com";
     $email_subject = "Your email subject line";
  
     function died($error) {
@@ -83,5 +83,5 @@ $headers = 'From: '.$email_from."\r\n".
 <?php
 	<!-- include your own success html here -->
 	<p>Thank you for contacting us. We will be in touch with you very soon.</p>
-
+}
 ?>
