@@ -38,8 +38,17 @@
 		{ 
 
 
+       $('.navbar-collapse').collapse('hide');
 
 
+
+}
+
+
+ function myCollapse() {  
+
+
+ $('.navbar-collapse').collapse('hide');
 
 }
      
@@ -63,13 +72,13 @@
 	<div class="collapse navbar-collapse" id="navbarResponsive">
           <ul class="navbar-nav ml-auto">
             <li class="nav-item">
-              <a class="nav-link js-scroll-trigger" href="#download">Download</a>
+              <a class="nav-link js-scroll-trigger" href="#download" onclick="myCollapse();">Download</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link js-scroll-trigger" href="#features">Features</a>
+              <a class="nav-link js-scroll-trigger" href="#features" onclick="myCollapse();">Features</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link js-scroll-trigger" href="#contact">Contact</a>
+              <a class="nav-link js-scroll-trigger" href="#contact" onclick="myCollapse();"> Contact</a>
             </li>
           </ul>
         </div>
@@ -176,7 +185,7 @@
 
     <section class="contact bg-primary" id="contact">
 
-	 <div class="container" style="border-style:solid " >
+	 <div class="container"  >
 	 <div class="col-md-6 col-sm-6">
 	<br>
 
